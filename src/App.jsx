@@ -350,10 +350,10 @@ function TutorRMT() {
       const response = await fetch(`${supabaseUrl.replace(/\/$/, "")}/functions/v1/rmt-tutor`, {
         method: "POST",
         headers: {
-          "Content-Type": "application/json",
-          apikey: supabaseAnonKey,
-          Authorization: `Bearer ${supabaseAnonKey}`
-        },
+  "Content-Type": "application/json",
+  apikey: supabaseAnonKey
+},
+          
         body: JSON.stringify({ messages: nextMessages.slice(-12) })
       });
       const data = await response.json();
