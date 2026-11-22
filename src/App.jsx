@@ -1,4 +1,3 @@
-import MathChatbot from "./components/MathChatbot";
 import { useEffect, useState } from "react";
 import "./App.css";
 import { syncLearningProgress } from "./supabase.js";
@@ -2692,7 +2691,6 @@ return (
         </p>
       </footer>
 
-      <MathChatbot />
     </div>
   );
 }

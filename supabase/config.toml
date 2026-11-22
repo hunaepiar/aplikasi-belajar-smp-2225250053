@@ -1,2 +1,2 @@
 [functions.rmt-tutor]
-verify_jwt = true
+verify_jwt = false
